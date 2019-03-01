@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ApollosampleApplication {
+public class ApolloSampleApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ApollosampleApplication.class, args);
+        SpringApplication.run(ApolloSampleApplication.class, args);
     }
 
 }

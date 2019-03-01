@@ -1,0 +1,11 @@
+
+server.port: 9090
+
+apollo:
+  meta: http://localhost:8080
+  cluster: GUANGZHOU
+  bootstrap:
+    enabled: true
+# 将Apollo配置加载提到初始化日志系统之前
+    eagerLoad.enabled: true
+
