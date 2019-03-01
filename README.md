@@ -32,6 +32,6 @@ WampServer安装完成后，登陆phpAdmin，初始用户名为root，初始密�
   - Apollo Server配置
 
  ## docker网络设置
- 从宿主机无法PING通docker内网IP, 需要添加路由打通网络，参考 [docker for windows 容器内网通过独立IP直接访问的方法](https://www.cnblogs.com/brock0624/p/9788710.html)
+ 从宿主机无法PING通docker容器内网IP, 需要添加路由打通网络，参考 [docker for windows 容器内网通过独立IP直接访问的方法](https://www.cnblogs.com/brock0624/p/9788710.html)
  `route -p add 172.18.0.0 mask 255.255.255.0 10.0.75.1`
 
