@@ -60,7 +60,7 @@ PS C:\Users\Administrator>
 
 2. 配置app id:
 该ID对应Apollo配置中如下截图的App ID:
-> ![Apollo](./static/s1.PNG)
+> ![Apollo](./static/s1.png)
 
 应用用有多种方式可以配置该参数，本应用采用如下方式：
   * 在 `resources\META-INF` 中新建 `app.properties`
