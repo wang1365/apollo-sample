@@ -47,3 +47,32 @@ PS C:\Users\Administrator>
 1. 应用ID
 2. meta-server地址
 3. 集群名
+
+对于一个spring boot应用来说，需要如下配置：
+1. `pom` 中加入依赖:
+```xml
+<dependency>
+    <groupId>com.ctrip.framework.apollo</groupId>
+    <artifactId>apollo-client</artifactId>
+    <version>1.1.0</version>
+</dependency>
+```
+
+2. 配置app id:
+该ID对应Apollo配置中如下截图的App ID:
+> ![Apollo](./static/s1.PNG)
+
+应用用有多种方式可以配置该参数，本应用采用如下方式：
+  * 在 `resources\META-INF` 中新建 `app.properties`
+  * 在 `app.properties` 新建配置项 `app.id=apollo-sample`
+
+3. 配置 `meta server`:
+在 `application.properties` 中新建配置项 `apollo.meta=http://localhost:8080`
+> 注意：**8080** 端口被本地apollo server占用，需要修改应用端口，如 `server.port=9090`
+
+3. 配置集群cluster:
+  集群需要与Apollo中使用的集群保持一致，Apollo中没有自定义集群的话使用默认default集群；
+在 `application.properties` 中新建配置项 `apollo.cluster=GUANGZHOU`
+
+4. 环境env配置:
+  如果Apollo中使用 `dev` 环境，需要配置应用的vm启动参数 `-Denv=dev`
