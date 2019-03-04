@@ -41,3 +41,9 @@ ce4ae0405ef8        mysql:5.7                      "docker-entrypoint.s…"   4 
 PS C:\Users\Administrator>
 ```
 * 进入镜像shell，`docker exec -it 84e9e122b914 /bin/bash`
+
+## 使用客户端API开发应用
+以下为几个关键配置
+1. 应用ID
+2. meta-server地址
+3. 集群名
